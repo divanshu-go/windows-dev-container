@@ -1,0 +1,45 @@
+{
+    "name": "Windows 11 DevContainer",
+    "image": "dockurr/windows",
+    "containerName": "windows",
+    "features": {
+      "docker-in-docker": "latest",
+      "host-tooling": "latest"
+    },
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "remote.extensionKind": {
+        "ms-vscode.cpptools": "ui"
+      }
+    },
+    "mounts": [
+      "source=/dev/kvm,target=/dev/kvm,type=bind"
+    ],
+    "runArgs": [
+      "--privileged",
+      "--cap-add=NET_ADMIN"
+    ],
+    "postCreateCommand": "echo 'Windows container setup complete!'",
+    "remoteUser": "root",
+    "portsAttributes": {
+      "8006": {
+        "label": "Web Interface"
+      },
+      "3389": {
+        "label": "RDP TCP"
+      }
+    },
+    "shutdownAction": "none",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-vscode.csharp",
+          "ms-vscode.vscode-remote-extensionpack"
+        ]
+      }
+    },
+    "dockerComposeFile": [
+      "./docker-compose.yml"
+    ]
+  }
+  
