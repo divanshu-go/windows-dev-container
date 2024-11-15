@@ -1,7 +1,7 @@
 {
-    "name": "Windows 11 DevContainer",
-    "dockerComposeFile": ["./docker-compose.yml"],
-    "service": "windows",
-    "workspaceFolder": "/workspace"
-  }
-  
+  "name": "Windows 11 DevContainer",
+  "dockerComposeFile": [
+    "./docker-compose.yml"
+  ],
+  "service": "windows"
+}
