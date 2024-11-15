@@ -3,5 +3,6 @@
   "dockerComposeFile": [
     "./docker-compose.yml"
   ],
-  "service": "windows"
+  "service": "windows",
+  "workspaceFolder": "/workspace"
 }
