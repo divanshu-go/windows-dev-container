@@ -15,7 +15,7 @@
     "3389:3389/udp"
   ],
   "containerEnv": {
-    "VERSION": "tiny11",
+    "VERSION": "2003",
     "RAM_SIZE": "4G",
     "CPU_CORES": "4",
     "DISK_SIZE": "64G"
