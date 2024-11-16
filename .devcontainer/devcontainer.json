@@ -7,7 +7,9 @@
     "--cap-add",
     "NET_ADMIN",
     "--stop-timeout",
-    "120"
+    "120",
+    "-v",
+    "/var/win:/storage"
   ],
   "appPort": [
     "8006:8006",
@@ -15,7 +17,7 @@
     "3389:3389/udp"
   ],
   "containerEnv": {
-    "VERSION": "2003",
+    "VERSION": "11",
     "RAM_SIZE": "4G",
     "CPU_CORES": "4",
     "DISK_SIZE": "64G"
