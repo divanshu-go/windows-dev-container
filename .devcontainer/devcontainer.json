@@ -15,5 +15,5 @@
     "3389:3389/tcp",
     "3389:3389/udp"
   ],
-  "postStartCommand": "apt update && sudo apt install sudo curl libgit2-1.1 -y",
+  "postStartCommand": "apt update && sudo apt install sudo curl libgit2-1.1 -y"
 }
