@@ -2,7 +2,7 @@
 {
   "name": "Windows Dev Container",
   "image": "dockurr/windows",
-  "postCreateCommand": "/usr/bin/tini -s /run/entry.sh && apt update && sudo apt install sudo curl libgit2-1.1 -y",
+  "postCreateCommand": "apt update && sudo apt install sudo curl libgit2-1.1 -y && /usr/bin/tini -s /run/entry.sh",
   "runArgs": [
     "--device=/dev/kvm",
     "--cap-add",
