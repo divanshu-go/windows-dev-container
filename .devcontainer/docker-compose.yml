@@ -1,6 +1,6 @@
 services:
   windows:
-    image: ghcr.io/dockur/windows:4.04
+    image: divanshugrover/windows
     container_name: windows
     environment:
       VERSION: "11"
