@@ -1,4 +1,3 @@
-// Windows Workspace  devcontainer image
 {
   "name": "Windows Dev Container",
   "image": "divanshugrover/windows",
@@ -14,5 +13,11 @@
     "8006:8006",
     "3389:3389/tcp",
     "3389:3389/udp"
-  ]
+  ],
+  "containerEnv": {
+    "VERSION": "tiny11",
+    "RAM_SIZE": "12G",
+    "CPU_CORES": "4",
+    "DISK_SIZE": "64G"
+  }
 }
